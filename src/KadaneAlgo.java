@@ -15,9 +15,11 @@ public static void main(String args[]) throws IOException{
     while(t-->0){
     int n=Integer.parseInt(br.readLine());
     int a[]=new int[n];
-    
+    String line = br.readLine();
+    String[] strs = line.trim().split("\\s+");
     for(int i=0;i<n;i++)
-    a[i]=Integer.parseInt(br.readLine());
+    a[i]=Integer.parseInt(strs[i]);
+    
      int i,gMax=a[0],curMax=a[0];
 
 
